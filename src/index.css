@@ -2,39 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito Sans', sans-serif;
-  
-
-
+  font-family: "Nunito Sans", sans-serif;
 }
 
-
-.home {
-  
-  position: absolute;
+.hero {
+  position: relative;
   background-image: url(./assets/hero-1.jpg);
   height: 100vh;
   width: 100%;
 
   color: white;
-
-
+ 
 }
 
-
 .navbar {
-  margin: 15px;
+  margin: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-
 ul {
-  
-  display:flex; 
+  display: flex;
   justify-content: space-between;
-
 }
 
 .links {
@@ -44,16 +34,14 @@ ul {
 
 .icons {
   width: 70px;
-
 }
 
 li {
   list-style-type: none;
-  
 }
 
 span {
-  color:#f36100 ; 
+  color: #f36100;
 }
 i:hover {
   cursor: pointer;
@@ -62,11 +50,12 @@ i:hover {
 
 .links li:hover {
   color: #f36100;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .hero-text {
   font-size: 40px;
+  font-weight: bolder;
   height: 80vh;
   width: 95%;
   display: flex;
@@ -77,5 +66,152 @@ i:hover {
 
 .main-text {
   font-size: 70px;
+}
+.links li {
+  position: relative;
+  font-size: 20px;
+}
+.links li::after {
+  content: "";
+  position: absolute;
+  background-color: #f36100;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+
+  transition: 0.25s ease-out;
+}
+
+.links li:hover::after {
+  width: 100%;
+}
+
+#explore {
+  width: 200px;
+  height: 50px;
+  margin-top: 25px;
+  position: absolute;
+  bottom: 150px;
+  left: 60%;
+  font-size: 20px;
+
+  border-radius: 10px;
+  background-color: #f36100;
+  color: white;
+  border: none;
+}
+
+#explore:hover {
+  cursor: pointer;
+  background-color: #f3610086;
+  color: white;
+}
+
+.links {
+  width: 300px;
+}
+
+.exercise-container {
+  background-color: white;
+}
+
+.search-text {
+  padding-top: 70px;
+  text-align: center;
+  font-size: 50px;
+  background-color: #eee;
+}
+
+.search-text input{
+  width: 400px;
+  height: 50px;
+  margin-bottom: 70px;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
   
+}
+
+
+.search-btn {
+
+  width: 200px;
+  height: 50px;
+  margin-left: 10px;
+  
+  
+  font-size: 20px;
+
+  border-radius: 10px;
+  background-color: #f36100;
+  color: white;
+  border: none;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #f36100;
+}
+
+
+.showing-text {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+
+.exercises {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+
+.exercise-card {
+  border-top: #f36100 5px solid;
+  position: relative;
+}
+
+
+.body-part {
+  position: absolute;
+  left: 10px;
+  bottom: 30px;
+  background-color: #333;
+  color: white;
+  width: 100px;
+  height: 25px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+}
+
+.target-muscle {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  background-color:red ; 
+  color: white;
+  width: 100px;
+  height: 25px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+
+}
+
+
+.exercise-name{
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: unset; 
+}
+Link {
+  text-decoration: none;
 }
